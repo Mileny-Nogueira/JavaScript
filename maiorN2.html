@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior número de três</title>
+</head>
+<body>
+    <script>
+        /* Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a seguir: ‘Números iguais’, caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’, caso o segundo seja maior que o primeiro.*/
+        let n1 = parseFloat(prompt("Digite o 1º número: "))
+        let n2 = parseFloat(prompt("Digite o 2º número: "))
+        let n3 = parseFloat(prompt("Digite o 3º número: "))
+
+        if(n1>n2 && n1>n3){
+            document.write("O primeiro é o maior")
+        }else if(n2>n1 && n2>n3){
+            document.write("O segundo é o maior")
+        }else if(n3>n1 && n3>n2){
+            document.write("O terceiro é o maior")
+        }else{
+            document.write("Os valores são iguais!")
+        }
+    </script>
+</body>
+</html>
